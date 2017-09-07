@@ -71,9 +71,11 @@ class DFRobot_BME280;
 class DFRobot_Lora;
 ```
 错误的写法
+```C++
 class DFRobot_sim7000;
 class Lora;
 class DFRobotLora;
+```
 
 ## 缩进
 
@@ -85,7 +87,7 @@ class DFRobotLora;
 ```C++
 void func()
 {
-  //something
+  //do something
 }
 ```
 
