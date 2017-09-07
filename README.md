@@ -21,13 +21,15 @@ C语言 Arduino封库编程规范
 正确的写法
 
 ```C++
-sensorValue
+int sensorValue;
 ```
 
 错误的写法
 
 ```C++
-sensor_value   sensorvalue    sensor_Value
+int sensor_value;
+float sensorvalue;
+byte sensor_Value;
 ```
 
 ## 宏
