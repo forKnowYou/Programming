@@ -13,7 +13,7 @@ C语言 Arduino封库编程规范
 * [if-else](#if-else)
 * [switch-case](#switch-case)
 * [运算符](#运算符)
-* [Readme中函数参数写法](#Readme中函数参数写法)
+* [Readme中多个参数函数写法](#Readme中多个参数函数写法)
 
 ## 变量及函数
 
@@ -131,7 +131,7 @@ default:
 for(int x = 0; x <= 10; x++)
 ```
 
-## Readme中函数参数写法
+## Readme中多个参数函数写法
 采用doxygen注释规则描述参数
 
 ```C++
