@@ -13,7 +13,7 @@ C语言 Arduino封库编程规范
 * [if-else](#if-else)
 * [switch-case](#switch-case)
 * [运算符](#运算符)
-* [Readme中多个参数函数写法](#Readme中多个参数函数写法)
+* [Readme中多个参数函数写法](#readme中多个参数函数写法)
 
 ## 变量及函数
 
