@@ -138,12 +138,13 @@ for(int x = 0; x <= 10; x++)
     /*!
      *  @brief Set operational mode to VL53L0X
      *
-     *  @param mode Work mode settings
+     *  @param mode  Work mode settings
      *      Single : Single mode
      *      Continuous : Back-to-back mode
-     *  @param precision：Set measurement precision
+     *  @param precision  Set measurement precision
      *      High：High precision(0.25mm)
      *      Low: Low precision(1mm)
+     *  @return  true if execute successfully, false otherwise.
      */
-    void setMode(uint8_t mode, uint8_t precision);
+    bool setMode(uint8_t mode, uint8_t precision);
 ```
