@@ -154,8 +154,8 @@ for(int x = 0; x <= 10; x++)
 ```C++
  /*!
   * file 文件名（不能使用中文）
-  * 如何做这个实验（不能使用中文）
-  * @n 实验现象是什么（不能使用中文）
+  * 如何做这个实验，描述实验步骤（只需要下载程序就能肉眼观测到的简单小实验例如blink，这步可以不写）（不能使用中文）
+  * @n 实验现象是什么（不能使用中文）
   *
   * Copyright   [DFRobot](http://www.dfrobot.com), 2016
   * Copyright   GNU Lesser General Public License
