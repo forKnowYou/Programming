@@ -148,3 +148,18 @@ for(int x = 0; x <= 10; x++)
      */
     bool setMode(uint8_t mode, uint8_t precision);
 ```
+
+## ino文件头部写法
+```C++
+ /*!
+  * file 文件名（不能使用中文）
+  * 如何做这个实验（不能使用中文）
+  * @n 实验现象是什么（不能使用中文）
+  *
+  * Copyright   [DFRobot](http://www.dfrobot.com), 2016
+  * Copyright   GNU Lesser General Public License
+  *
+  * version  V1.0
+  * date  2017-10-9
+  */
+  ```
