@@ -6,7 +6,10 @@ C语言 Arduino封库编程规范
 * [简介](#简介)
 * [变量及函数命名](#变量及函数命名)
 * [宏](#宏)
+* [结构体](#结构体)
+* [共用体](#共用体)
 * [枚举](#枚举)
+* [指针](#指针)
 * [类](#类)
 * [缩进](#缩进)
 * [{}](#{})
@@ -58,6 +61,37 @@ byte sensor_Value;
 ```C++
 #define swapInt(a, b)  { int c = b; a = b; b = c; }
 ```
+## 结构体
+
+使用typedef，前面要加s，后面首字母大写
+
+```C++
+typedef struct
+{
+  int age;
+  char name[20];
+}sTeacher_t;
+```
+
+## 共用体
+
+使用typedef，前面要加u，后面首字母大写
+
+```C++
+typedef union {
+  uint32_t value;
+  uint8_t b[4];
+} uValue_t;
+```
+
+使用typedef，前面要加s，后面首字母大写
+```C++
+typedef struct
+{
+  int age;
+  char name[20];
+}sTeacher_t;
+```
 
 ## 枚举
 
@@ -73,6 +107,23 @@ typedef enum
   eFriday,
   eSaturday,
 }eDay_t;
+```
+## 指针
+
+指针前面要加*，显示说明这是一个指针
+
+```C++
+int *pVar1, *pVar2;
+int **ppVar3;
+sTeacher_t *psTeacher,*psT1,*psT2;
+uValue_t *puValue,*puV1,*puV2;
+eDay_t *peDay, *peD, *peD1,*peD2;
+```
+
+指向函数的指针，使用pf做前缀
+
+```C++
+typedef void (*pfTeacherWork_t)();
 ```
 
 ## 类
