@@ -86,8 +86,7 @@ typedef union {
 
 使用typedef，前面要加s，后面首字母大写
 ```C++
-typedef struct
-{
+typedef struct{
   int age;
   char name[20];
 }sTeacher_t;
@@ -97,8 +96,7 @@ typedef struct
 
 前面要加e，后面首字母大写
 ```C++
-typedef enum
-{
+typedef enum{
   eSunday=0,
   eMonday,
   eTuesday,
