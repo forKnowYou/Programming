@@ -38,7 +38,7 @@ byte sensor_Value;
 
 ## 宏
 
-所有字母都要大写
+作为简化记忆功能的宏所有字母都要大写
 正确的写法
 ```C++
 #define MAX 1000
@@ -50,12 +50,20 @@ byte sensor_Value;
 #define Max 1000
 #define sensorReg1 1
 ```
+带参数的宏,参数要加括号
+```C++
+#define ADD(x, y)   ((x) + (y))
+```
+类似函数用法的宏，采用函数的编程规范
+```C++
+#define swapInt(a, b)  { int c = b; a = b; b = c; }
+```
 
 ## 枚举
 
 前面要加e，后面首字母大写
 ```C++
-enum eDAY
+typedef enum
 {
   eSunday=0,
   eMonday,
@@ -64,7 +72,7 @@ enum eDAY
   eThursday,
   eFriday,
   eSaturday,
-}
+}eDay_t;
 ```
 
 ## 类
