@@ -84,14 +84,6 @@ typedef union {
 } uValue_t;
 ```
 
-使用typedef，前面要加s，后面首字母大写
-```C++
-typedef struct{
-  int age;
-  char name[20];
-}sTeacher_t;
-```
-
 ## 枚举
 
 前面要加e，后面首字母大写
