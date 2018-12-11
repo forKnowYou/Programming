@@ -100,7 +100,7 @@ typedef enum{
 ```
 ## 指针
 
-指针前面要加*，显示说明这是一个指针
+指针前面要加 *  显式说明这是一个指针
 
 ```C++
 int *pVar1, *pVar2;
@@ -130,6 +130,19 @@ class DFRobot_Lora;
 class DFRobot_sim7000;
 class Lora;
 class DFRobotLora;
+```
+成员变量要加 _ 前缀
+
+```C++
+class DFRobot_BME280
+{
+public:
+  DFRobot_BME280(int addr)
+    :_addr(addr)
+    {}
+private:
+  int _addr;
+}
 ```
 
 ## 缩进
